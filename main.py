@@ -1,6 +1,7 @@
 def encode(password):
     encodedPass = ""
-    encodedPass += ''.join(([str((int(char) + 3)) for char in password]))
+    for char in password:
+        encodedPass += str(int(char)+3)
     return encodedPass
 
 
