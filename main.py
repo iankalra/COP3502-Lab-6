@@ -1,7 +1,10 @@
 def encode(password):
     encodedPass = ""
     for char in password:
-        encodedPass += str(int(char)+3)
+        if int(char) >= 7:
+            encodedPass += str(int(char)-7)
+        else:
+            encodedPass += str(int(char)+3)
     return encodedPass
 
 
