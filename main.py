@@ -1,3 +1,6 @@
+# Chaitanya Rana (Owner of Repository)
+# Ian Kalra (Collaborator)
+
 def encode(password):
     encodedPass = ""
     for char in password:
